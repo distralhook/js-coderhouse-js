@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Monofur';
+    src: url('../fonts/monof55.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: "Monofur";
+    font-size: 24px;
+}
+h1, h2, p{
+    color: green;
+}
+button{
+    background-color: green;
+    border-color: chartreuse;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#tareas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+}
+li,ul{
+    border: 3px solid chartreuse;
+    border-radius: 10px;
+}
+
+/*tercera entrega*/
+
+#cartas{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,auto);
+    img{
+        margin:4px;
+    }
+}
+
+#best{
+    display: none;
+}
+
+#notBest{
+    display: none;
+}
+
+label,input{
+    color: chartreuse;
+}

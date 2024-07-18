@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tercer entrega</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <h1>Curso CoderHouse; Leandro Hernandez</h1>
+
+    <h2>Tercer entrega: Juego de memoria de cartas</h2>
+
+    <div class="buttons">
+        <button onclick="jugar(4)">Facil</button>
+        <button onclick="jugar(8)">Mediano</button>
+        <button onclick="jugar(12)">Dificil</button>
+    </div>
+
+    <form id="best">
+        <label for="inputField">Felicidades, escribe tu nombre para quedar grabado/a en la sala de la fama por haber terminado este juego:</label>
+        <input type="text" id="nombre">
+    </form>
+
+    <div id="info"> <!--INFO-->
+        <p>Movimientos: <span id="moves">0</span></p>
+        <p>(WIP)Tiempo: <span id="timer">00:00</span></p>
+    </div>
+    
+    <div id="cartas"></div>
+
+    <div></div>
+
+    <script src="../js/tercera.js"></script>
+    <!--<script src="../js/luxon.js"></script>-->
+</body>
+</html>

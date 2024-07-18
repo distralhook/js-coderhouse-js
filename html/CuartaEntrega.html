@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuarta entrega</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--LIBRERIA USADA: https://animate.style/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+    <h1>Curso CoderHouse; Leandro Hernandez</h1>
+
+    <h2>Cuarta entrega: Juego de memoria de cartas</h2>
+
+    <div class="buttons">
+        <button onclick="jugar(4)">Facil</button>
+        <button onclick="jugar(8)">Mediano</button>
+        <button onclick="jugar(12)">Dificil</button>
+    </div>
+
+    <form id="best">
+        <label for="inputField">Felicidades! Escribe tu nombre para quedar grabado/a en la sala de la fama por haber terminado este juego:</label>
+        <input type="text" id="nombre">
+    </form>
+
+    <div id="notBest">
+        <p>No lograste poner tu nombre en el top 3 pero ten un pokemon como premio de consolacion</p>
+        <img id="pokemon" src="">
+    </div>
+
+    <div id="info"> <!--INFO-->
+        <p>Movimientos: <span id="moves">0</span></p>
+    </div>
+    
+    <div id="cartas"></div>
+
+    <p>Ranking de mejores cantidad de movimientos:</p>
+    <div id="tareas"> <!--Reusando css de segunda entrega-->
+        <ol id="facil">
+            <p>Facil</p>
+            <ul class="rank">1. <span class="ganador"></span> - <span class="movimientos"></span></ul>
+            <ul class="rank">2. <span class="ganador"></span> - <span class="movimientos"></span></ul>
+            <ul class="rank">3. <span class="ganador"></span> - <span class="movimientos"></span></ul>
+        </ol>
+        <ol id="mediano">
+            <p>Mediano</p>
+            <ul class="rank">1. <span class="ganador"></span> - <span class="movimientos"></span></ul>
+            <ul class="rank">2. <span class="ganador"></span> - <span class="movimientos"></span></ul>
+            <ul class="rank">3. <span class="ganador"></span> - <span class="movimientos"></span></ul>
+        </ol>
+        <ol id="dificil">
+            <p>Dificil</p>
+            <ul class="rank">1. <span class="ganador"></span> - <span class="movimientos"></span></ul>
+            <ul class="rank">2. <span class="ganador"></span> - <span class="movimientos"></span></ul>
+            <ul class="rank">3. <span class="ganador"></span> - <span class="movimientos"></span></ul>
+        </ol>
+    </div>
+
+    <script src="../js/cuarta.js"></script>
+</body>
+</html>

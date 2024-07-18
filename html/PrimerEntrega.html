@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coderhouse primer entrega</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body >
+
+    <h1>Curso CoderHouse; Leandro Hernandez</h1>
+    
+    <h2>Primer entrega: PIEDRA, PAPEL O TIJERA (👊✋✌️)</h2>
+
+    <!--ELEGIR MODO DE JUEGO-->
+    <div class="buttons" id="gameMode">
+        <button onclick="esconder(1)">Un jugador</button>
+        <button onclick="esconder(2)">Dos jugadores</button>
+        <button onclick="reset()">Restaurar puntaje</button>
+        <button onclick="exampleFor()">Mejor de cinco contra la PC</button>
+    </div>
+
+
+
+    <div class="buttons" id="vsCPU" style="display: none;"> <!--PVC-->
+        <button onclick="PVC(0)">👊</button>
+        <button onclick="PVC(1)">✋</button>
+        <button onclick="PVC(2)">✌️</button>
+        <button onclick="goBack()">Volver y elegir modo de juego</button>
+    </div>
+
+    <div class="buttons" id="vsPLAYER" style="display: none;"> <!--PVP-->
+        
+        <p id="player1" style="display: none;">
+            Jugador 1:
+            <button onclick="player1(0)">👊</button>
+            <button onclick="player1(1)">✋</button>
+            <button onclick="player1(2)">✌️</button>
+        </p>
+        
+        <button onclick="goBack()">Volver y elegir modo de juego</button>
+
+        <p id="player2" style="display: none;">
+            Jugador 2:
+            <button onclick="PVP(0)">👊</button>
+            <button onclick="PVP(1)">✋</button>
+            <button onclick="PVP(2)">✌️</button>
+        </p>
+        
+    </div>
+
+    <div> <!--CONTADOR-->
+        <p>Victorias: <span id="vic">0</span></p>
+        <p>Derrotas: <span id="der">0</span></p>
+        <p>Empates: <span id="emp">0</span></p>
+    </div>
+
+    <div> <!--JUGADOR 1 RESPUESTA-->
+        <p>Jugador 1:</p>
+        <p id="Piedra" style="display:none;font-size:5rem;width:100%;text-align:center;">👊</p>
+        <p id="Papel" style="display:none;font-size:5rem;width:100%;text-align:center;">✋</p>
+        <p id="Tijera" style="display:none;font-size:5rem;width:100%;text-align:center;">✌️</p>
+    </div>
+    
+    <div> <!--JUGADOR 2 / PC RESPUESTA-->
+        <p>Jugador 2:</p>
+        <p id="Rock" style="display:none;font-size:5rem;width:100%;text-align:center;">👊</p>
+        <p id="Paper" style="display:none;font-size:5rem;width:100%;text-align:center;">✋</p>
+        <p id="Scissors" style="display:none;font-size:5rem;width:100%;text-align:center;">✌️</p>
+    </div>
+
+    <script src="../js/primer.js"></script>
+</body>
+</html>
