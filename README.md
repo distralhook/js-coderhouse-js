@@ -1,4 +1,4 @@
-![imagen](https://github.com/user-attachments/assets/dcaa5b24-9df2-467d-a669-6ffa9cd3b367)<H1>PORFAVOR LEER</H1>
+<H1>PORFAVOR LEER</H1>
 
 # js-coderhouse
 
